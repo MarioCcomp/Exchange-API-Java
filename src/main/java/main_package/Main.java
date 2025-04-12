@@ -20,7 +20,9 @@ public class Main {
 		
 		Exchange moeda = new Exchange(moeda1.toUpperCase(), moeda2.toUpperCase(), value);
 		
-		System.out.println(moeda.toString());	
+		System.out.println(moeda.toString());
+		
+		scan.close();
 		
 		System.exit(0);
 	}
