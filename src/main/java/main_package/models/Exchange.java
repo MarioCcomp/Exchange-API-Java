@@ -59,7 +59,9 @@ public class Exchange {
 		
 		OkHttpClient client = new OkHttpClient();
 		
-		String URL = "https://v6.exchangerate-api.com/v6/" + InfoAPI.key + "/latest/" + name;
+		String key = InfoAPI.key; // change here to your API key
+		
+		String URL = "https://v6.exchangerate-api.com/v6/" + key + "/latest/" + name;
 		Request request = new Request.Builder().url(URL).build();
 		double result = 0;
 		
